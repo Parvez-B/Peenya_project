@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #003366, #ffcc00);
+    color: white;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.contact-form, .faq {
+    margin: 20px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.contact-form:hover, .faq:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    background: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+.faq-item {
+    margin: 15px 0;
+    padding: 10px;
+    border-left: 4px solid #007BFF;
+    transition: background-color 0.3s;
+}
+
+.faq-item:hover {
+    background-color: #e9f7ff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .contact-form, .faq {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+
+
+.social-media-container {
+    display: flex;
+    gap: 15px;
+}
+
+.social-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    position: relative;
+    width: 100px;
+    text-align: center;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.instagram {
+    background-color: #C13584;
+}
+
+.twitter {
+    background-color: #1DA1F2;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.social-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5);
+}
+.media{
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 600px) {
+    .social-button {
+        padding: 10px;
+        font-size: 14px;
+        width: 80px;
+    }
+}
